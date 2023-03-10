@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4e8dc;
+    height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+  }
+  
+  .navbar {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .navbar-menu__wrapper {
+    display: flex;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    
+  }
+  
+  .navbar-menu__small-device {
+    display: none;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    column-gap: 32.14px;
+    align-items: center;
+  }
+  
+  .navbar__menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #606060;
+  }
+
+  .navbar__menu a:hover {
+    color: red;
+  }
+  
+  .navbar__menu a.active {
+    color: black;
+  }
+  
+  .navbar__auth {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
+  
+  .sign-in {
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 22px;
+    color: white;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 75px;
+    min-height: calc(100% - 117px);
+  }
+  
+  .snippets {
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .title {
+    font-size: 60px;
+    font-weight: 800;
+    width: 690px;
+    line-height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .summer {
+    display: inline;
+    color: #bb1e1e;
+  }
+  
+  .description {
+    width: 690px;
+    color: #5b5b5b;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .social-media {
+    display: flex;
+    width: 172.25px;
+    justify-content: space-around;
+  }
+  
+  .social-media a {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero__image img {
+    width: 120%;
+    height: 120%;
+    padding-left: 15%;
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .background img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    filter: blur(2px);
+  }
+
+  .starbucks{
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .container {
+      max-width: 65rem;
+    }
+  
+    .navbar-menu__wrapper {
+      column-gap: 70px;
+    }
+  
+    .hero {
+      column-gap: 30px;
+    }
+  
+    .hero__content {
+      font-size: 14px;
+    }
+  
+    .snippets,
+    .description,
+    .order-now {
+      font-size: inherit;
+    }
+  
+    .title,
+    .description {
+      width: 400px;
+    }
+  
+    .title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .navbar {
+      padding-top: 20px;
+    }
+  
+    .navbar-menu__wrapper {
+      font-size: 14px;
+      column-gap: 50px;
+    }
+  
+    .navbar__menu {
+      column-gap: 45px;
+    }
+  
+    .navbar__logo img {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .hero {
+      min-height: calc(100% - 67px);
+    }
+  
+    .hero__image img {
+      width: 257px;
+      height: 374px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0 25px;
+    }
+  
+    .navbar-menu__wrapper {
+      display: none;
+    }
+  
+    .navbar-menu__small-device {
+      display: block;
+    }
+  
+    .hero {
+      flex-direction: column;
+      align-items: unset;
+    }
+  
+    .title,
+    .description {
+      width: 100%;
+    }
+  
+    .description {
+      margin-bottom: 20px;
+    }
+  
+    .order-now {
+      margin-bottom: 20px;
+    }
+  
+    .social-media {
+      width: 141.58px;
+      height: 20px;
+    }
+  
+    .hero__image {
+      text-align: right;
+    }
+  }
+  
+  @media screen and (max-width: 424px) {
+    .title {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #ffffff;
+}
+::selection{
+  background: rgba(255, 255, 255, 0.3);
+}
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.wrapper .box i.quote{
+  font-size: 20px;
+  color: #17a2b8;
+}
+.wrapper .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #17a2b8;
+}
+.box .info .stars{
+  margin-top: 2px;
+}
+.box .info .stars i{
+  color: #17a2b8;
+}
+.box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.box:hover .content .image img{
+  border-color: #fff;
+}
+
+@media (max-width: 1045px) {
+  .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapper .box{
+    width: 100%;
+  }
+}
+
+/* .mb-3 {
+$input-padding-y:                       $input-btn-padding-y;
+$input-padding-x:                       $input-btn-padding-x;
+$input-font-family:                     $input-btn-font-family;
+$input-font-size:                       $input-btn-font-size;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     $input-btn-line-height;
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-font-size-sm:                    $input-btn-font-size-sm;
+
+$input-padding-y-lg:                    $input-btn-padding-y-lg;
+$input-padding-x-lg:                    $input-btn-padding-x-lg;
+$input-font-size-lg:                    $input-btn-font-size-lg;
+
+$input-bg:                              var(--#{$prefix}form-control-bg);
+$input-disabled-color:                  null;
+$input-disabled-bg:                     var(--#{$prefix}form-control-disabled-bg);
+$input-disabled-border-color:           null;
+
+$input-color:                           var(--#{$prefix}body-color);
+$input-border-color:                    var(--#{$prefix}border-color); //$gray-400
+$input-border-width:                    $input-btn-border-width;
+$input-box-shadow:                      $box-shadow-inset;
+
+$input-border-radius:                   $border-radius;
+$input-border-radius-sm:                $border-radius-sm;
+$input-border-radius-lg:                $border-radius-lg;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              tint-color($component-active-bg, 50%);
+$input-focus-color:                     $input-color;
+$input-focus-width:                     $input-btn-focus-width;
+$input-focus-box-shadow:                $input-btn-focus-box-shadow;
+
+$input-placeholder-color:               var(--#{$prefix}secondary-color);
+$input-plaintext-color:                 var(--#{$prefix}body-color);
+
+$input-height-border:                   calc($input-border-width * 2); // stylelint-disable-line function-disallowed-list
+
+$input-height-inner:                    add($input-line-height * 1em, $input-padding-y * 2);
+$input-height-inner-half:               add($input-line-height * .5em, $input-padding-y);
+$input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y * .5);
+
+$input-height:                          add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+$input-height-sm:                       add($input-line-height * 1em, add($input-padding-y-sm * 2, $input-height-border, false));
+$input-height-lg:                       add($input-line-height * 1em, add($input-padding-y-lg * 2, $input-height-border, false));
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$form-color-width:                      3rem;
+} */
